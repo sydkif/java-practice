@@ -5,6 +5,13 @@
             "name": "CodeLens (Launch) - CSVReader",
             "request": "launch",
             "mainClass": "CSVReader",
+            "projectName": "CSV_ad64dccb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CSVReader",
+            "request": "launch",
+            "mainClass": "CSVReader",
             "projectName": "CSV_2286ea54"
         },
         {

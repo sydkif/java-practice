@@ -14,7 +14,7 @@ public class CSVReader {
 
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
-                System.out.println(values[0] + "\t" + values[5]);
+                System.out.println(values[0] + " " + values[1] + " " + values[5]);
 
             }
 
