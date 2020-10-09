@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUI_Login",
+            "request": "launch",
+            "mainClass": "GUI_Login",
+            "projectName": "GUI_2286f989"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUI_Login",
+            "request": "launch",
+            "mainClass": "GUI_Login",
+            "projectName": "GUICoolness_86f31c9"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUI",
+            "request": "launch",
+            "mainClass": "GUI",
+            "projectName": "GUICoolness_86f31c9"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HelloWorld<Test_2e5e6204>",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "Test_2e5e6204"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TicTacToe<Test_2e5e6204>",
+            "request": "launch",
+            "mainClass": "TicTacToe",
+            "projectName": "Test_2e5e6204"
+        }
+    ]
+}
