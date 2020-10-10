@@ -68,7 +68,6 @@ public class GUI_Login implements ActionListener {
             success.setText("Successful Login!");
         } else {
             success.setText("Invalid User/Password!");
-
         }
 
     }
