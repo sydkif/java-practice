@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExtendMain",
+            "request": "launch",
+            "mainClass": "ExtendMain",
+            "projectName": "Test_ff3ebe6d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUI",
+            "request": "launch",
+            "mainClass": "GUI",
+            "projectName": "Test_ff3ebe6d"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GUI",
             "request": "launch",
             "mainClass": "GUI",

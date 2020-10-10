@@ -5,6 +5,13 @@
             "name": "CodeLens (Launch) - GUI_Login",
             "request": "launch",
             "mainClass": "GUI_Login",
+            "projectName": "GUI_ad64ec00"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUI_Login",
+            "request": "launch",
+            "mainClass": "GUI_Login",
             "projectName": "GUI_2286f989"
         },
         {

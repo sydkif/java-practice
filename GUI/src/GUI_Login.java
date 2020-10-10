@@ -64,7 +64,7 @@ public class GUI_Login implements ActionListener {
 
         System.out.println(user + ", " + password);
 
-        if (user.equals("admin") && password.equals("4733")) {
+        if (user.equals("admin") && password.equals("1234")) {
             success.setText("Successful Login!");
         } else {
             success.setText("Invalid User/Password!");
