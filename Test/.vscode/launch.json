@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "Test_ff3ebe6d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "Test_ff3ebe6d"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - WPMTest",
             "request": "launch",
             "mainClass": "WPMTest",

@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Snake",
+            "request": "launch",
+            "mainClass": "Snake",
+            "projectName": "Snake_e88ecac5"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HelloWorld<Test_2e5e6204>",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "Test_2e5e6204"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TicTacToe<Test_2e5e6204>",
+            "request": "launch",
+            "mainClass": "TicTacToe",
+            "projectName": "Test_2e5e6204"
+        }
+    ]
+}
