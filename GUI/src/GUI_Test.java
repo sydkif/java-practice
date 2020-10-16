@@ -1,22 +1,29 @@
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-public class GUI_Test {
+public class GUI_Test implements ActionListener {
 
-    private static int numberOfLabels = 7;
+    private static int numberOfLabels, balance = 5;
+    private static JFrame frame;
     private static JLabel headLabel;
+    private static JLabel labels;
+    private static JPanel panel;
+    private static JButton button;
 
     public static void main(String[] args) {
 
-        JFrame frame = new JFrame();
-        JPanel panel = new JPanel();
+        frame = new JFrame();
+        panel = new JPanel();
 
         frame.setSize(800, 600);
         frame.setTitle("GUI Testing");
@@ -35,16 +42,34 @@ public class GUI_Test {
         headLabel.setFont(new Font("Consolas", Font.BOLD, 24));
         panel.add(headLabel);
 
-        JLabel[] labels = new JLabel[numberOfLabels];
-        for (int i = 0; i < numberOfLabels; i++) {
-            labels[i] = new JLabel();
-            labels[i].setText("Label " + (i + 1));
-            labels[i].setForeground(new Color(224, 108, 113));
-            labels[i].setFont(new Font("Consolas", Font.PLAIN, 16));
-            panel.add(labels[i]);
-        }
+        button = new JButton("Add more labels");
+        button.addActionListener(new GUI_Test());
+        panel.add(button);
 
         frame.setVisible(true);
+    }
+
+    public static void addLabels() {
+        numberOfLabels++;
+        labels = new JLabel();
+        labels.setText("Label " + (numberOfLabels));
+        labels.setForeground(new Color(224, 108, 113));
+        labels.setFont(new Font("Consolas", Font.PLAIN, 16));
+        panel.add(labels);
+        balance--;
+        if (balance == 0) {
+            button.setVisible(false);
+        }
+        System.out.println("New label added.");
+        System.out.println("Balance left " + balance);
+        frame.validate();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+        addLabels();
+
     }
 
 }
