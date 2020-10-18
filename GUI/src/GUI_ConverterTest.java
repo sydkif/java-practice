@@ -147,8 +147,4 @@ public class GUI_ConverterTest implements ActionListener {
         textField.setVisible(true);
         btnCalculate.setVisible(true);
     }
-
-    public boolean toggleCondition() {
-        return con;
-    }
 }
