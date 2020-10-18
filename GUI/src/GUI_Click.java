@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-public class GUI implements ActionListener {
+public class GUI_Click implements ActionListener {
 
     private int count = 0;
     private JLabel label;
@@ -10,7 +10,7 @@ public class GUI implements ActionListener {
     private JPanel panel;
     private JButton button;
 
-    public GUI() {
+    public GUI_Click() {
         frame = new JFrame();
 
         button = new JButton("Click me");
@@ -33,7 +33,7 @@ public class GUI implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new GUI();
+        new GUI_Click();
 
     }
 
