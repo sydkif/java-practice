@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -18,7 +19,7 @@ public class GUI_Test implements ActionListener {
     private static JLabel headLabel;
     private static JLabel labels;
     private static JPanel panel;
-    private static JButton button;
+    private static JButton button, buttonNext;
 
     public static void main(String[] args) {
 
@@ -31,8 +32,9 @@ public class GUI_Test implements ActionListener {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
 
-        panel.setLayout(new GridLayout(8, 0));
+        panel.setLayout(new GridLayout(8, 8));
         panel.setBackground(new Color(54, 59, 71));
+        panel.setMaximumSize(new Dimension(400, 400));
         panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         headLabel = new JLabel();
@@ -43,8 +45,12 @@ public class GUI_Test implements ActionListener {
         panel.add(headLabel);
 
         button = new JButton("Add more labels");
+        button.setPreferredSize(new Dimension(40, 40));
         button.addActionListener(new GUI_Test());
         panel.add(button);
+
+        buttonNext = new JButton("It's the new BUTTON!");
+        buttonNext.addActionListener(new GUI_Test());
 
         frame.setVisible(true);
     }
@@ -59,6 +65,8 @@ public class GUI_Test implements ActionListener {
         balance--;
         if (balance == 0) {
             button.setVisible(false);
+            panel.add(buttonNext);
+
         }
         System.out.println("New label added.");
         System.out.println("Balance left " + balance);
@@ -67,8 +75,11 @@ public class GUI_Test implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
-        addLabels();
+        if (e.getSource() == button) {
+            addLabels();
+        } else if (e.getSource() == buttonNext) {
+            System.out.println("New button is working!");
+        }
 
     }
 

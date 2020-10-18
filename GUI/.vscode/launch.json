@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GUI_ConverterTest",
+            "request": "launch",
+            "mainClass": "GUI_ConverterTest",
+            "projectName": "GUI_ad64ec00"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GUI_Test",
             "request": "launch",
             "mainClass": "GUI_Test",
