@@ -26,7 +26,7 @@ public class GUI_Test implements ActionListener {
         frame = new JFrame();
         panel = new JPanel();
 
-        frame.setSize(800, 600);
+        frame.setSize(336, 509);
         frame.setTitle("GUI Testing");
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

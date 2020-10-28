@@ -2,6 +2,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GUI_ConverterTest2",
+            "request": "launch",
+            "mainClass": "GUI_ConverterTest2",
+            "projectName": "GUI_ad64ec00"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUI_ConverterTest1",
+            "request": "launch",
+            "mainClass": "GUI_ConverterTest1",
+            "projectName": "GUI_ad64ec00"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "GUI_ad64ec00"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ComboBoxDemo",
+            "request": "launch",
+            "mainClass": "ComboBoxDemo",
+            "projectName": "GUI_ad64ec00"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MenuExample",
+            "request": "launch",
+            "mainClass": "MenuExample",
+            "projectName": "GUI_ad64ec00"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUI_Card",
+            "request": "launch",
+            "mainClass": "GUI_Card",
+            "projectName": "GUI_ad64ec00"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - random",
+            "request": "launch",
+            "mainClass": "random",
+            "projectName": "GUI_ad64ec00"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUI_CalculatorTest",
+            "request": "launch",
+            "mainClass": "GUI_CalculatorTest",
+            "projectName": "GUI_ad64ec00"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GUI_Click",
             "request": "launch",
             "mainClass": "GUI_Click",
