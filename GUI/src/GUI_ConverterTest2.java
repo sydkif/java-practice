@@ -31,9 +31,10 @@ public class GUI_ConverterTest2 implements ActionListener {
     private static JMenuItem iL, iW, iT; // Length, Weight, Temperature
     private static JTextField tf1, tf2; // textField1, textField2
     private static JComboBox<String> cb1, cb2; // comboBox1, comboBox2
-    private static JLabel label1, label2;
+    private static JLabel label1, label2, label3; // Label symbol1, symbol2, instruction
     private static JButton invBtn; // invisibleButton
 
+    // Custom color (R, G, B)
     static Color C51 = new Color(51, 51, 51); // Easy way to change color on multiple object
     static Color C31 = new Color(31, 31, 31); // No need to change 1 by 1 in the code
     // Also used to shorten the code for setColor
@@ -64,27 +65,23 @@ public class GUI_ConverterTest2 implements ActionListener {
         iL = new JMenuItem("Length"); // Create new item for menu
         iL.setBackground(C51); // Set BACKGROUND color
         iL.setForeground(Color.WHITE); // Set FONT color
-        iL.setOpaque(true);
         iL.addActionListener(this); // To implement action on click
         iL.setFont(new Font("Segoe UI", Font.PLAIN, 14)); // Set FONT type and size
 
         iW = new JMenuItem("Weight"); // Create new item for menu
         iW.setBackground(C51); // Set BACKGROUND color
         iW.setForeground(Color.WHITE); // Set FONT color
-        iW.setOpaque(true);
         iW.addActionListener(this); // To implement action on click
         iW.setFont(new Font("Segoe UI", Font.PLAIN, 14)); // Set FONT type and size
 
         iT = new JMenuItem("Temperature"); // Create new item for menu
         iT.setBackground(C51); // Set BACKGROUND color
         iT.setForeground(Color.WHITE); // Set FONT color
-        iT.setOpaque(true);
         iT.addActionListener(this); // To implement action on click
         iT.setFont(new Font("Segoe UI", Font.PLAIN, 14)); // Set FONT type and size
 
         menu.setBackground(C31); // Set BACKGROUND color
         menu.setForeground(Color.WHITE); // Set FONT color
-        menu.setOpaque(false);
         menu.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 20)); // Set FONT type and size
         menu.add(iL); // Add items
         menu.add(iW); // in the
@@ -92,7 +89,6 @@ public class GUI_ConverterTest2 implements ActionListener {
         // menu.setFocusPainted(false);
 
         menuBar.setBackground(C31); // Set BACKGROUND color
-        menuBar.setOpaque(true);
         menuBar.setBorder(BorderFactory.createEmptyBorder()); // To hide white border line
         menuBar.add(menu); // To add menu in menubar
 
@@ -119,7 +115,7 @@ public class GUI_ConverterTest2 implements ActionListener {
         tf2.setFocusable(false); // Lock it from being edited
         panel.add(tf2); // Add into the panel
 
-        label1 = new JLabel(""); // Create a label, in this program, a symbol (can be labeled anything)
+        label1 = new JLabel(""); // Create a label, this one, a symbol (can be labeled anything)
         label1.setBounds(12, 89, 20, 24); // Set the object position (x-axis, y-axis, width, height)
         label1.setForeground(Color.WHITE); // Set FONT color
         label1.setFont(new Font("Segoe MDL2 Assets", Font.PLAIN, 12)); // Set FONT type and size
@@ -127,13 +123,20 @@ public class GUI_ConverterTest2 implements ActionListener {
         panel.add(label1); // Add the label into panel
         label1.setVisible(false); // To hide or show
 
-        label2 = new JLabel(""); // Create a label, in this program, a symbol (can be labeled anything)
+        label2 = new JLabel(""); // Create a label, this one, a symbol (can be labeled anything)
         label2.setBounds(12, 209, 20, 24); // Set the object position (x-axis, y-axis, width, height)
         label2.setForeground(Color.WHITE); // Set FONT color
         label2.setFont(new Font("Segoe MDL2 Assets", Font.PLAIN, 12)); // Set FONT type and size
         // Segoe MDL2 Assets is a special Windows10 for symbols
         panel.add(label2); // Add the label into panel
         label2.setVisible(false); // To hide or show
+
+        label3 = new JLabel("Press enter or change unit to calculate"); // Create a label for instruction
+        label3.setBounds(12, 240, 260, 24); // Set the object position (x-axis, y-axis, width, height)
+        label3.setForeground(Color.GRAY); // Set FONT color
+        label3.setFont(new Font("Segoe UI", Font.PLAIN, 12));  // Set FONT type and size
+        panel.add(label3); // Add the label into panel
+        label3.setVisible(false); // To hide or show
 
         cb1 = new JComboBox<String>(); // Create a combo box
         cb1.setBounds(28, 88, 120, 24); // Set the object position (x-axis, y-axis, width, height)
@@ -174,6 +177,7 @@ public class GUI_ConverterTest2 implements ActionListener {
         cb2.setVisible(true); // Show the comboBox 2
         label1.setVisible(true); // Show the label 1
         label2.setVisible(true); // Show the label 2
+        label3.setVisible(true); // Show the label 3
         tf1.setFocusable(true); // Unlock textField 1
 
         // Run this code when LENGTH is selected
