@@ -1,4 +1,4 @@
-package assignmentPackage;
+package assignment1Package;
 
 // FILENAME: Fan.java
 
